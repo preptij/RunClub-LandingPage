@@ -15,9 +15,31 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Run Club For-MFS-That Don't Run Orlando",
-  description: "Join our running community",
+  description: "Welcome to our Orlando running community for all fitness levels. Join us for fun runs and community events!",
   icons: {
     icon: "/Icons/android-chrome-192x192.png",
+  },
+  openGraph: {
+    title: "Run Club For-MFS-That Don't Run Orlando",
+    description: "Welcome to our Orlando running community for all fitness levels. Join us for fun runs and community events!",
+    url: "https://run-club-landing-page-untx.vercel.app", // Replace with your actual domain
+    siteName: "Run Club Orlando",
+    images: [
+      {
+        url: "/Users/josh/Desktop/Landing pages/my-landing-page/public/Link-Preview/Screenshot 2025-09-02 at 7.47.20 PM.png", // Path to your preview image
+        width: 1200,
+        height: 630,
+        alt: 'Run Club Orlando - Join our running community',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "Run Club For-MFS-That Don't Run Orlando",
+    description: "Welcome to our Orlando running community for all fitness levels. Join us for fun runs and community events!",
+    images: ['/images/og-preview.jpg'], // Same image or different one for Twitter
   },
 };
 
