@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div className="w-full h-screen">
       <BackgroundGradientAnimation>
-        <ParticleTextEffect words={["Welcome To","A Run Club","4-MFS","That Dont Run","Orlando Chapter"]}/>
+        <ParticleTextEffect words={["Welcome To","A Run Club","4-MFS","That Dont Run","Orlando"]}/>
       </BackgroundGradientAnimation>
     </div>
   );
