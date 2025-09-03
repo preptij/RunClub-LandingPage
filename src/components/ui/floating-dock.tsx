@@ -45,12 +45,12 @@ const FloatingDockMobile = ({
 }) => {
   const [open, setOpen] = useState(false);
   return (
-    <div className={cn("fixed bottom-4 right-4 z-50 md:hidden", className)}>
+    <div className={cn("fixed bottom-4 left-1/2 -translate-x-1/2 z-50 md:hidden", className)}>
       <AnimatePresence>
         {open && (
           <motion.div
             layoutId="nav"
-            className="absolute bottom-full right-0 mb-2 flex flex-col items-end gap-2"
+            className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 flex flex-col items-center gap-2 w-full px-4"
           >
             {items.map((item, idx) => (
               <motion.div
@@ -83,7 +83,7 @@ const FloatingDockMobile = ({
       </AnimatePresence>
       <button
         onClick={() => setOpen(!open)}
-        className="flex h-12 w-12 items-center justify-center rounded-full bg-gray-900/90 backdrop-blur-sm border border-gray-700 hover:bg-gray-800 transition-colors duration-200"
+        className="flex h-12 w-12 items-center justify-center rounded-full bg-gray-900/90 backdrop-blur-sm border border-gray-700 hover:bg-gray-800 transition-colors duration-200 mx-auto"
       >
         <IconLayoutNavbarCollapse className={`h-6 w-6 text-white transition-transform duration-200 ${open ? 'rotate-180' : ''}`} />
       </button>
